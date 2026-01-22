@@ -275,6 +275,9 @@
   .digital-intro {
     padding: 140px 20px 80px;
     min-height: 60vh;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
   }
 
   .digital-intro h1 {
@@ -292,6 +295,18 @@
     padding: 80px 20px;
   }
 
+  .capability-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .capability-subtitle {
+    font-size: 16px;
+  }
+
   .capability-grid {
     grid-template-columns: 1fr;
     gap: 24px;
@@ -299,6 +314,14 @@
 
   .capability-card {
     padding: 30px 25px;
+  }
+
+  .capability-card h3 {
+    font-size: 18px;
+  }
+
+  .capability-card p {
+    font-size: 14px;
   }
 
   .digital-cta h2 {
@@ -311,6 +334,14 @@
 }
 
 @media (max-width: 480px) {
+  .digital-intro {
+    padding: 120px 15px 60px;
+    min-height: 50vh;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+  }
+
   .digital-intro h1 {
     font-size: 28px;
   }
@@ -319,8 +350,44 @@
     font-size: 15px;
   }
 
+  .digital-overview,
+  .capability-section,
+  .expertise-section,
+  .digital-cta {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .capability-subtitle {
+    font-size: 15px;
+  }
+
+  .capability-card {
+    padding: 25px 20px;
+  }
+
+  .card-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .capability-card h3 {
+    font-size: 17px;
+  }
+
+  .capability-card p {
+    font-size: 13px;
+  }
+
   .digital-cta h2 {
     font-size: 24px;
+  }
+
+  .digital-cta p {
+    font-size: 15px;
   }
 }
 
