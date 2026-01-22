@@ -191,6 +191,10 @@
 @media (max-width: 768px) {
   .services-intro {
     padding: 120px 20px 60px;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    min-height: 60vh;
   }
 
   .services-intro h1 {
@@ -251,6 +255,14 @@
 }
 
 @media (max-width: 480px) {
+  .services-intro {
+    padding: 100px 15px 50px;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    min-height: 50vh;
+  }
+
   .services-intro h1 {
     font-size: 28px;
   }
