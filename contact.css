@@ -195,12 +195,32 @@
     padding: 80px 20px;
   }
 
+  .contact-header {
+    margin-bottom: 40px;
+  }
+
   .contact-header .section-title {
     font-size: 32px;
   }
 
+  .contact-intro-text {
+    font-size: 16px;
+  }
+
   .contact-grid {
     gap: 40px;
+  }
+
+  .contact-section h3 {
+    font-size: 22px;
+  }
+
+  .contact-icon {
+    font-size: 40px;
+  }
+
+  .contact-value {
+    font-size: 15px;
   }
 
   .contact-cta {
@@ -214,19 +234,61 @@
   .contact-cta p {
     font-size: 16px;
   }
-
-  .contact-item {
-    justify-content: flex-start;
-  }
 }
 
 @media (max-width: 480px) {
+  .contact-intro {
+    padding: 120px 15px 60px;
+    min-height: 45vh;
+  }
+
   .contact-intro h1 {
     font-size: 28px;
   }
 
+  .contact-intro p {
+    font-size: 15px;
+  }
+
+  .contact-content {
+    padding: 60px 15px;
+  }
+
+  .contact-header .section-title {
+    font-size: 28px;
+  }
+
+  .contact-intro-text {
+    font-size: 15px;
+  }
+
+  .contact-section h3 {
+    font-size: 20px;
+  }
+
+  .contact-icon {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .contact-label {
+    font-size: 12px;
+  }
+
+  .contact-value {
+    font-size: 14px;
+  }
+
+  .contact-cta {
+    padding: 60px 15px;
+  }
+
   .contact-cta h2 {
     font-size: 24px;
+  }
+
+  .contact-cta p {
+    font-size: 15px;
   }
 }
 
