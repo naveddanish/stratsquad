@@ -361,6 +361,13 @@
     min-height: 60vh;
   }
 
+  .image-intro::after {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    transform: scale(1);
+  }
+
   .image-intro h1 {
     font-size: 36px;
   }
@@ -377,6 +384,11 @@
     padding: 80px 20px;
   }
 
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
   .mv-card,
   .value-card,
   .leader-card {
@@ -387,15 +399,84 @@
   .leadership-grid {
     margin-top: 40px;
     gap: 30px;
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-title.center {
+    font-size: 32px;
+  }
+
+  .leader-card h4 {
+    font-size: 24px;
+  }
+
+  .leader-card p {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
+  .image-intro {
+    padding: 120px 15px 60px;
+    min-height: 50vh;
+  }
+
+  .image-intro::after {
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+    transform: scale(1);
+    filter: blur(2px);
+  }
+
   .image-intro h1 {
     font-size: 28px;
   }
 
   .image-intro p {
     font-size: 15px;
+  }
+
+  .about-detail,
+  .mission-vision,
+  .core-values,
+  .leadership,
+  .digital-overview {
+    padding: 60px 15px;
+  }
+
+  .mv-card,
+  .value-card,
+  .leader-card {
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-title.center {
+    font-size: 28px;
+  }
+
+  .about-detail p {
+    font-size: 16px;
+  }
+
+  .mv-card p,
+  .value-card p {
+    font-size: 15px;
+  }
+
+  .leader-card h4 {
+    font-size: 22px;
+  }
+
+  .leader-card p {
+    font-size: 14px;
   }
 }
