@@ -1,0 +1,401 @@
+/* ========================
+   PAGE INTRO (IMAGE)
+======================== */
+.image-intro {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+
+  padding: 180px 40px 100px;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+.image-intro::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("images/About StratSquad.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(3px);
+  z-index: 0;
+  transform: scale(1.05);
+}
+
+.image-intro::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.intro-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #196de4 0%, #277de1 50%, #5ac2e1 100%);
+  opacity: 0;
+  z-index: 1;
+}
+
+.image-intro .intro-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.image-intro h1 {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 28px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.image-intro p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================
+   SECTION TITLE BASE STYLES
+======================== */
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #277de1, #5fd7eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========================
+   ABOUT DETAIL
+======================== */
+.about-detail {
+  background: linear-gradient(135deg, #f0f9fc 0%, #ffffff 100%);
+  padding: 100px 40px 80px;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-container.narrow {
+  max-width: 900px;
+}
+
+.about-detail p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a5a7e;
+  margin-bottom: 28px;
+}
+
+/* ========================
+   MISSION & VISION
+======================== */
+.mission-vision {
+  background: linear-gradient(135deg, #eaf4ff 0%, #f3fbff 100%);
+  padding: 100px 40px;
+}
+
+.mission-vision .content-container {
+  padding-top: 0;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.mv-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9fc 100%);
+  padding: 50px 45px;
+  border-radius: 16px;
+  border: 1px solid #c0dce8;
+  box-shadow: 0 10px 40px rgba(39, 125, 225, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(39, 125, 225, 0.25);
+}
+
+.mv-card .section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #277de1, #5fd7eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.mv-card p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #3a5a7e;
+}
+
+/* ========================
+   CORE VALUES
+======================== */
+.core-values {
+  background: linear-gradient(135deg, #f0f9fc 0%, #ffffff 100%);
+  padding: 100px 40px;
+}
+
+.core-values .content-container {
+  padding-top: 0;
+}
+
+.section-title.center {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #277de1, #5fd7eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.value-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9fc 100%);
+  padding: 50px 45px;
+  border-radius: 16px;
+  border: 1px solid #c0dce8;
+  box-shadow: 0 10px 40px rgba(39, 125, 225, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(39, 125, 225, 0.2);
+  border-color: #5fd7eb;
+}
+
+.value-card span {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #277de1 0%, #5fd7eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.3;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a2332;
+}
+
+.value-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3a5a7e;
+}
+
+/* ========================
+   LEADERSHIP
+======================== */
+.leadership {
+  background: linear-gradient(135deg, #eaf4ff 0%, #f3fbff 100%);
+  padding: 100px 40px;
+}
+
+.leadership .content-container {
+  padding-top: 0;
+}
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.leader-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9fc 100%);
+  padding: 55px;
+  border-radius: 16px;
+  border: 1px solid #c0dce8;
+  box-shadow: 0 12px 45px rgba(39, 125, 225, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leader-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(39, 125, 225, 0.25);
+  border-color: #5fd7eb;
+}
+
+.leader-card h4 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a2332;
+}
+
+.leader-card span {
+  display: block;
+  font-size: 14px;
+  color: #277de1;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.leader-card p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #3a5a7e;
+  margin-bottom: 20px;
+}
+
+/* Small LinkedIn Link Below Description */
+.linkedin-link-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background: #277de1;
+  transition: all 0.3s ease;
+}
+
+.linkedin-link-small svg {
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
+}
+
+.linkedin-link-small:hover {
+  background: #5fd7eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 125, 225, 0.3);
+}
+
+/* ========================
+   SUBJECT MATTER EXPERTS
+======================== */
+.digital-overview {
+  background: linear-gradient(135deg, #f0f9fc 0%, #ffffff 100%);
+  padding: 60px 40px 60px;
+}
+
+.digital-overview .content-container {
+  padding-top: 0;
+}
+
+.digital-overview .section-title {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #277de1, #5fd7eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.digital-overview .overview-text {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #3a5a7e;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 900px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid,
+  .leadership-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-intro {
+    padding: 140px 20px 80px;
+    min-height: 60vh;
+  }
+
+  .image-intro h1 {
+    font-size: 36px;
+  }
+
+  .image-intro p {
+    font-size: 16px;
+  }
+
+  .about-detail,
+  .mission-vision,
+  .core-values,
+  .leadership,
+  .digital-overview {
+    padding: 80px 20px;
+  }
+
+  .mv-card,
+  .value-card,
+  .leader-card {
+    padding: 35px 25px;
+  }
+
+  .values-grid,
+  .leadership-grid {
+    margin-top: 40px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-intro h1 {
+    font-size: 28px;
+  }
+
+  .image-intro p {
+    font-size: 15px;
+  }
+}

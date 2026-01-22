@@ -1,0 +1,239 @@
+/* ========================
+   CONTACT PAGE STYLES
+======================== */
+
+/* ========================
+   PAGE INTRO
+======================== */
+.contact-intro {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #1854a8 0%, #277de1 50%, #4db8d9 100%);  
+  padding: 180px 40px 100px;
+  color: #ffffff;
+  margin-top: 80px;
+}
+
+.contact-intro .intro-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.contact-intro h1 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+}
+
+.contact-intro p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* ========================
+   CONTACT CONTENT
+======================== */
+.contact-content {
+  background: linear-gradient(135deg, #f0f9fc 0%, #ffffff 100%);
+  padding: 100px 40px;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-header .section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #277de1 0%, #5fd7eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #3a5a7e;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ========================
+   CONTACT SECTIONS
+======================== */
+.contact-section {
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.contact-section h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1a2332;
+}
+
+.contact-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #277de1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.contact-value {
+  font-size: 16px;
+  color: #3a5a7e;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.contact-value a {
+  color: #277de1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-value a:hover {
+  color: #5fd7eb;
+}
+
+/* ========================
+   CONTACT FORM
+======================== */
+/* Remove empty form section styling - no form box needed */
+.contact-form-section {
+  display: none;
+}
+
+/* ========================
+   CONTACT CTA
+======================== */
+.contact-cta {
+  background: linear-gradient(135deg, #eaf4ff 0%, #f3fbff 100%);
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.contact-cta h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #277de1 0%, #5fd7eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-cta p {
+  font-size: 18px;
+  color: #3a5a7e;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+/* ========================
+   RESPONSIVE
+======================== */
+@media (max-width: 768px) {
+  .contact-intro {
+    padding: 140px 20px 80px;
+    min-height: 50vh;
+  }
+
+  .contact-intro h1 {
+    font-size: 32px;
+  }
+
+  .contact-intro p {
+    font-size: 16px;
+  }
+
+  .contact-content {
+    padding: 80px 20px;
+  }
+
+  .contact-header .section-title {
+    font-size: 32px;
+  }
+
+  .contact-grid {
+    gap: 40px;
+  }
+
+  .contact-cta {
+    padding: 80px 20px;
+  }
+
+  .contact-cta h2 {
+    font-size: 28px;
+  }
+
+  .contact-cta p {
+    font-size: 16px;
+  }
+
+  .contact-item {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-intro h1 {
+    font-size: 28px;
+  }
+
+  .contact-cta h2 {
+    font-size: 24px;
+  }
+}
+
+.intro-description {
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 850px;
+  margin: 0 auto;
+}
