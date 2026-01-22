@@ -27,13 +27,20 @@
       </a>
     </div>
 
-    <nav class="nav-links">
-  <a href="index.html" class="active">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="digital.html">Digital</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <!-- Hamburger Menu Button -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="digital.html">Digital</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
   </div>
 </header>
@@ -181,6 +188,58 @@
 
   </div>
 </footer>
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  
+  // Toggle menu
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function(e) {
+      e.stopPropagation();
+      this.classList.toggle('active');
+      navLinks.classList.toggle('active');
+      
+      // Prevent body scroll when menu is open
+      if (navLinks.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu when clicking nav links
+    const navItems = navLinks.querySelectorAll('a');
+    navItems.forEach(item => {
+      item.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        if (!navLinks.contains(e.target) && !hamburger.contains(e.target)) {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      }
+    });
+    
+    // Reset on window resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768) {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+</script>
 
 <!-- SCROLL ANIMATIONS -->
 <script>
