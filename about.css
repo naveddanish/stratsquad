@@ -361,6 +361,24 @@
     min-height: 60vh;
   }
 
+  @media (max-width: 768px) {
+    .digital-overview .content-container.narrow {
+      max-width: 100%;
+    }
+    .digital-overview .section-title {
+      font-size: 30px;
+    }
+    
+    .digital-overview .overview-text {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    @media (max-width: 480px) {
+      .digital-overview {
+        padding: 50px 15px;
+      }
+  }
+
   .image-intro::after {
     background-attachment: scroll;
     background-position: center top;
