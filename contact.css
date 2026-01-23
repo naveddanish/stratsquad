@@ -75,10 +75,10 @@
 }
 
 .contact-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -208,6 +208,7 @@
   }
 
   .contact-grid {
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 
